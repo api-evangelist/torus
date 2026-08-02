@@ -1,0 +1,15 @@
+# Torus
+
+> Torus is a Y Combinator (Summer 2026) startup building an AI-powered engineering intelligence platform for capital projects. Its agents analyze engineering documents (P&IDs, datasheets, specification sheets, drawings) to extract parameters, flag cross-document inconsistencies across 50+ categories, and automate workflow deliverables like procurement approvals and RFIs for infrastructure, data center, and energy projects.
+
+Torus offers two deployment models: Torus Managed (isolated-tenant hosted cloud where customer data never trains models and is dropped after each request) and Sovereign (data, agent, and model all run inside the customer's own cloud, VPC, or servers). SOC 2 Type 1 & 2 are in progress as of July 2026. Torus publishes no public API, developer documentation, or SDKs at this time; access is via the hosted application and sales-led pilots (hello@usetorus.com).
+
+## Company
+
+- [Website](https://usetorus.com): Torus product and security overview
+- [App sign-in](https://app.usetorus.com/login): Torus hosted application
+- [Y Combinator profile](https://www.ycombinator.com/companies/torus): Batch Summer 2026, San Francisco, CA
+
+## API Evangelist profile
+
+- [apis.yml](https://raw.githubusercontent.com/api-evangelist/torus/refs/heads/main/apis.yml): APIs.json profile for Torus (no public APIs catalogued)

@@ -1,0 +1,55 @@
+generated: '2026-07-21'
+method: searched
+source: live probes of usetorus.com hosts
+note: No well-known discovery documents are published. app.usetorus.com returns its
+  login-page SPA catch-all (HTTP 200 text/html redirected to /login) for every path,
+  which is recorded here as not-published rather than as a document hit.
+hosts:
+- host: https://usetorus.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://www.usetorus.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://app.usetorus.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 200
+    note: SPA login-page catch-all (text/html redirected to /login), not a security.txt
+  - path: /.well-known/openid-configuration
+    status: 200
+    note: SPA login-page catch-all, not an OIDC discovery document
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    note: SPA login-page catch-all, not an RFC 8414 document
+  - path: /.well-known/api-catalog
+    status: 200
+    note: SPA login-page catch-all, not an api-catalog
+  - path: /.well-known/ai-plugin.json
+    status: 200
+    note: SPA login-page catch-all, not an ai-plugin manifest
+  - path: /llms.txt
+    status: 200
+    note: SPA login-page catch-all, not an llms.txt

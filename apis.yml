@@ -1,7 +1,24 @@
 aid: torus
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/torus.png
 name: Torus
-description: Torus is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Torus is a Y Combinator (Summer 2026) startup building an AI-powered engineering
+  intelligence platform for capital projects. Its agents analyze engineering documents such
+  as P&IDs, datasheets, specification sheets, and drawings to extract parameters, flag
+  cross-document inconsistencies across 50+ categories, and automate workflow deliverables
+  like procurement approvals and RFIs for infrastructure, data center, and energy projects.
+  Torus runs as a managed cloud or a sovereign in-VPC deployment and publishes no public
+  API or developer surface as of July 2026.
 url: https://raw.githubusercontent.com/api-evangelist/torus/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +28,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- Agents
+- Engineering
+- Construction
+- Capital Projects
+- Infrastructure
+- Document Intelligence
 apis: []
+common:
+- type: DomainSecurity
+  url: security/torus-domain-security.yml
+- name: Website
+  type: Website
+  url: https://usetorus.com
+- name: Login
+  type: Login
+  url: https://app.usetorus.com/login
+- name: LLMs.txt
+  type: LLMsTxt
+  url: llms/torus-llms.txt
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
